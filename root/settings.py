@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'news',
     'blog',
     'edu',
+    'blogapp',
     #########
     'rest_framework'
 ]

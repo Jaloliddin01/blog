@@ -26,7 +26,7 @@ SECRET_KEY = str(os.getenv("DJANGO_SECRET_KEY"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["nkaunter.pythonanywhere.com"]
+ALLOWED_HOSTS = ["nkaunter.pythonanywhere.com", '127.0.0.1']
 
 
 # Application definition
@@ -83,8 +83,11 @@ WSGI_APPLICATION = 'root.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'storefront',
+        'HOST': 'localhost',
+        'USER': 'root',
+        "PASSWORD": 'Jalol0901@@@'
     }
 }
 
